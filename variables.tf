@@ -8,7 +8,7 @@ variable "ssh_port" {
     default = 22
 }
 variable "my_system" {
-    default = "98.207.180.245/32"
+    default = "0.0.0.0/0"
 }
 
 variable "ami" {
