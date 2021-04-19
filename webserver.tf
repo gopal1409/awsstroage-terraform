@@ -1,6 +1,6 @@
 resource "aws_instance" "hellow-world" {
  ami = "${var.ami}" 
- instance_type = "${var.instance_type}"
+ instance_type = "${lookup(var.instance_type,terraform.workspace)}"
  vpc_security_group_ids = ["${aws_security_group.webserver_sg.id}"]
  availability_zone = "${var.az}"
  key_name = "terraform"
