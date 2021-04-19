@@ -20,7 +20,7 @@ variable "instance_type" {
 }
 
 variable "az" {
-  default="us-east-1a"
+  default="us-east-2a"
 }
 
 
